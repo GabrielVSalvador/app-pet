@@ -40,5 +40,3 @@ petwalk/
 
 Gabriel Salvador
 =======
-# app-pet
->>>>>>> 6e68b98949605efef8cac51fc96f267c9dbd2a4e
