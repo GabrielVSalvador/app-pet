@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🐾 PetWalk
 
 Aplicativo mobile de serviços para pets — passeios, petshops e produtos, tudo em um só lugar.
@@ -29,7 +28,8 @@ petwalk/
 - [x] Semana 1 — HTML: estrutura e tags
 - [x] Semana 2 — CSS: cores, fontes e espaçamentos
 - [x] Semana 3 — Flexbox: layout dos cards
-- [ ] Semana 4 — Mini-projeto: tela de boas-vindas
+- [x] Semana 4 — bootstrap
+- [ ] Semana 5 — Mini-projeto: tela de boas-vindas
 - [ ] Mês 2 — JavaScript básico
 - [ ] Mês 3 — Projeto integrado
 - [ ] Fase 2 — React
