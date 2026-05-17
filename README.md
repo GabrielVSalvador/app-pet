@@ -28,7 +28,7 @@ petwalk/
 - [x] Semana 1 — HTML: estrutura e tags
 - [x] Semana 2 — CSS: cores, fontes e espaçamentos
 - [x] Semana 3 — Flexbox: layout dos cards
-- [x] Semana 4 — bootstrap
+- [x] Semana 4 — Responsividade e bootstrap
 - [ ] Semana 5 — Mini-projeto: tela de boas-vindas
 - [ ] Mês 2 — JavaScript básico
 - [ ] Mês 3 — Projeto integrado
