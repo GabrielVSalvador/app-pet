@@ -3,13 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PetWalk</title>
+        <title>RolêPet</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
         <header>
             <div class="confbar">
+                <div></div>
+                <div class="logo">
+                    <i class="fa-solid fa-paw"></i>
+                    <h3>RolêPet</h3>
+                </div>
                 <a href="#configuracoes"><i class="fa-solid fa-gear"></i></a>
             </div>
             <div class="perfil-container">
@@ -18,17 +24,22 @@
             </div>
         </header>
         <main class="home">
-            <div class="searchbar">
-                <form>
-                   <div class="input-wrapper">
-                        <i class="fa-solid fa-search"></i>
-                        <input type="search" name="q" placeholder="Buscar passeador...">
-                    </div>
-                </form>
-            </div>
+            <section class="busca">
+                    <form>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-search"></i>
+                            <input type="search" name="local" placeholder="Onde seu pet vai passear?">
+                        </div>
+                        <ul class="sugestoes-lugares">
+                            <li><i class="fa-solid fa-clock icone-historico"></i>Praça Getulio Vargas</li>
+                            <li><i class="fa-solid fa-clock icone-historico" ></i>Parque das Flores</li>
+                            <li><i class="fa-solid fa-clock icone-historico"></i>Praça 1 de Maio</li>
+                        </ul>                     
+                    </form>
+            </section>
         </main>
         <footer>
-            <nav>
+            <nav >
                 <ul class="menu-principal">
                     <li class="servico">
                         <a href="#home"><i class="fa-solid fa-dog"></i><span>Passeios</span></a>
@@ -42,5 +53,6 @@
                 </ul>
             </nav>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
