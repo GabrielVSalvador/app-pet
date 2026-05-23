@@ -1,0 +1,11 @@
+/* Importa o global */
+@import '../css/global.css';
+
+/* Importa os componentes */
+@import '../css/components.css';
+
+/* Estilos específicos para a página inicial */
+@import '../css/pages/home.css';
+
+/* Estilos específicos para página de boas vindas */
+@import '../css/pages/welcome.css';
