@@ -1,10 +1,90 @@
+.welcome-body {
+    background-image: url("../../assets/img/passeio.jpeg")
+}
 
-.welcome-page {
-    background-color: var(--cor-primaria-dark);
-    min-height: 100vh;
+.welcome-header {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--radius-lg);
+}
+
+.welcome-header img {
+    width: 180px;
+    height: 108px;
+    border: 1px solid var(--border-color);
+}
+
+.welcome-footer {
+    height: 200px;
+    color: var(--background-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome-main{
+    height: calc(100vh - 388px);
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.verification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: var(--radius-lg);
+}
+
+.verification-info{
+    color: var(--secondary-color);
+    background-color:  color-mix(in srgb, var(--background-color), transparent 30%);
+    border: 1px solid var(--text-color);
+    border-radius: var(--radius-xxl);
+    font-size: var(--font-sm);
+    width: 120px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-button {
+    width: 400px;
+    height: 96px;
+    padding: var(--radius-lg);
+    font-size: var(--font-xl);
+    color: var(--border-color);
+    display: flex;
     justify-content: space-between;
-    padding: 48px 28px 40px;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid var(--border-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.welcome-button a {
+    color: var(--border-color);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+@media (min-width: 740px) {
+    .welcome-body {
+        background-size: cover;
+    }
+    .welcome-main{
+    height: calc(100vh - 440px);
+    }
+    .welcome-button {
+        width: 800px;
+        height: 96px;
+        font-size: 3rem;
+    }
 }

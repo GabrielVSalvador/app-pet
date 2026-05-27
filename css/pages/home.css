@@ -1,3 +1,4 @@
+
 .profile-container{
     display: flex;
     justify-content: start;
@@ -25,20 +26,9 @@
     align-items: center;
     flex-direction: row;
 }
-.logo{
-    color: var(--background-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: var(--radius-sm);
-}
-
-.logo i{
-    color: var(--border-color);
-}
-.logo h3{
-    margin: 0;
+.logo img{
+    width: 84px;
+    height: 48px;
 }
 
 .header-top a{
@@ -186,7 +176,8 @@
     .service a{
         font-size: var(--font-xl);
     }
-    .logo i{
-        font-size: var(--font-xl);
+    .logo img{  
+        width: 168px;
+        height: 96px;
     }
 }
