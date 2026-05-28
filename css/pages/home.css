@@ -42,11 +42,13 @@
     justify-content: flex-end;
     flex-direction: column;
     min-height: calc(100vh - 180px);
-    padding: 20px;
 }
 
 .search-section {
+    position: relative;
+    z-index: 1;
     padding: var(--radius-lg);
+    margin-bottom: var(--radius-lg);
 }
 
 .input-wrapper {
@@ -122,6 +124,15 @@
     margin-right: var(--radius-sm);
 }
 
+.home iframe{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 412px;
+    height: 735px;
+    border: 0;
+}
+
 @media (min-width: 740px) {
     header{
         height: 200px;
@@ -179,5 +190,9 @@
     .logo img{  
         width: 168px;
         height: 96px;
+    }
+    .home iframe{
+        width: 820px;
+        height: 840px;
     }
 }

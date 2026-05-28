@@ -46,7 +46,6 @@ header{
 
 body{
     min-height: 100vh;
-    padding-bottom: 70px; /* Altura do rodapé */
     background-color: var(--background-color);
 }
 
