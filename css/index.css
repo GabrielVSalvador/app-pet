@@ -9,3 +9,6 @@
 
 /* Estilos específicos para página de boas vindas */
 @import '../css/pages/welcome.css';
+
+/* Estilos específicos do login */
+@import '../css/pages/login.css'

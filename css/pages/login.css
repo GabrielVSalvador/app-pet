@@ -1,0 +1,138 @@
+.login-header {
+    background: transparent;
+    padding: 30px 20px 10px;
+    text-align: center;
+}
+
+.login-header img {
+    height: 80px;
+    border-radius: var(--radius-md);
+}
+
+.login-body{
+    background: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 15px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -80px;
+}
+
+.login-main h2 {
+    font-size: var(--font-lg);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.input-group-text{
+    background: var(--white-color);
+    border-color: var(--border-color);
+    color: var(--primary-color);
+}
+
+.form-control {
+    background: var(--white-color);
+    border-color: var(--border-color);
+    color: var(--black-color);
+}
+
+.form-control::placeholder {
+    color: var(--gray-color);
+}
+
+.form-control:focus {
+    background: var(--white-color);
+    border-color: var(--primary-color);
+    color: var(--black-color);
+    box-shadow: none;
+}
+
+.btn-entrar{
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 16px;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-md);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-entrar:hover{
+    background: var(--secondary-color);
+}
+
+.divider {
+    text-align: center;
+    color: var(--gray-color);
+    font-size: var(--font-sm);
+    position: relative;
+}
+
+.divider::before,.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.divider::before {
+    left: 0;
+}
+.divider::after {
+    right: 0;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-social {
+    flex: 1;
+    background: var(--white-color);
+    border: 1px solid var(--border-color);
+    color: var(--secondary-color);
+    padding: 14px;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    gap: 8px;
+}
+
+.btn-social:hover{
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.link-cadastro {
+    text-align: center;
+    color: var(--gray-color);
+    font-size: var(--font-sm);
+}
+
+.link-cadastro a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
