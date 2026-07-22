@@ -1,11 +1,31 @@
-const passeadores = [
-    {nome: "João", avaliacao: 4.5, disponivel: true},
-    {nome: "Maria", avaliacao: 4.8, disponivel: false},
-    {nome: "Carlos", avaliacao: 4.2, disponivel: true}
-]
+const locais = [
+    "Praça Getúlio Vargas",
+    "Parque das Flores",
+    "Praça 1 de Maio",
+    "Parque Municipal",
+    "Lago da Saudade",
+    "Praça do Suspiro"
+];
 
-passeadores.forEach(function(passeador, indice) {
-    console.log(`${indice + 1}. ${passeador.nome}`);
-    console.log(`Avaliação: ${passeador.avaliacao}`);
-    console.log(`Disponível: ${passeador.disponivel}`);
+const campoBusca = document.getElementById("campoBusca");
+const listaSugestoes = document.getElementById("listaSugestoes");
+
+campoBusca.addEventListener("input", () => {
+    const termoBusca = campoBusca.value.toLowerCase();
+    listaSugestoes.innerHTML = "";
+
+    if (termoBusca) {
+        const sugestoesFiltradas = locais.filter(local => local.toLowerCase().includes(termoBusca));
+        sugestoesFiltradas.forEach(sugestao => {
+            const li = document.createElement("li");
+            li.innerHTML = `<i class="fa-solid fa-search"></i> ${sugestao}`;
+            listaSugestoes.appendChild(li);
+        });
+    } else {
+        locais.slice(0, 3).forEach(local => {
+            const li = document.createElement("li");
+            li.innerHTML = `<i class="fa-solid fa-clock history-icon"></i> ${local}`;
+            listaSugestoes.appendChild(li);
+        });
+    }
 });
